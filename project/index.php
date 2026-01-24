@@ -5,7 +5,6 @@ if (!isset($_SESSION['user_id'])) {
     exit;
 }
 
-// Database connection
 $host = 'localhost';
 $dbname = 'login_db';
 $username = 'root';
@@ -26,12 +25,12 @@ $cars = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enhanced Car Showcase</title>
+    <title>YLLi's Car Showcase</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Enhanced Car Showcase</h1>
+        <h1>YLLi's Car Showcase</h1>
         <p>Explore amazing cars with details, search, and more! Add your own images below.</p>
         <p>Welcome, you are logged in! <a href="logout.php">Logout</a> | <a href="add_car.php">Add New Car</a></p>
     </header>
